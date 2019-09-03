@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather API</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <header class="header">
+        <div class="search">
+            <input type="text" placeholder="Enter city name" id="search-text">
+            <button id="search-btn">Submit</button>
+        </div>
+    </header>
+    <div class="main">
+        <div class="city">
+            <div class="city-name" id="searched-city"></div>
+            <div id="icon">
+                <img src="" id="city-icon">
+            </div>
+        </div>
+        <div class="weather-info">
+            <div class="temperature">
+                <div id="temp"></div>
+            </div>
+            <div class="humidity">
+                <div id="city-humidity"></div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="main.js"></script>
+</html>

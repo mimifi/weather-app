@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.container {
+    background-color: lightsteelblue;
+    padding: 50px;
+    height: 100vh;
+}
+
+.header {
+    height: 20%;
+    background-color: cadetblue;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search {
+    width: 50%;
+}
+
+input, button {
+    font-size: 15px;
+}
+
+.city, .temperature, .humidity {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+
+.main {
+    display: flex;
+    flex-flow: row wrap;
+    height: 50%;
+}
+
+.weather-info {
+    flex-flow: column;
+    width: 50%;
+}
+
+.city {
+    background-color: orange;
+    width: 50%;
+
+}
+
+.temperature {
+    background-color: rebeccapurple;
+    height: 50%;
+}
+
+.humidity {
+    background-color: red;
+    height: 50%;
+}
