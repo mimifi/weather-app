@@ -37,7 +37,7 @@ function getWeatherDetails(url, request) {
 
 function showWeatherDetails(request) {
     request.onload = function () {
-        isEmpty();
+        emptyWeatherDetails();
         let data = JSON.parse(this.response);
         icon.src = "http://openweathermap.org/img/w/" + data.weather[0].icon + ".png";
         cityName.append(data.name);
@@ -46,12 +46,11 @@ function showWeatherDetails(request) {
     };
 }
 
-function isEmpty() {
+function emptyWeatherDetails() {
     cityName.innerHTML = "";
     icon.src = "";
     temperature.innerHTML = "";
     humidity.innerHTML = "";
-    console.log('This is name of city', cityName.innerHTML);
 }
 
 
