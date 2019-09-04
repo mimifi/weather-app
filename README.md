@@ -1,4 +1,4 @@
-#Weather App
+# Weather App
 
 This is an application to show the temperature and humidity for different location.
 
